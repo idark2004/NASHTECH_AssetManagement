@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mock.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <h2>Manage User</h2>
+    </header>
+    <aside>
+        <div>
+            <img src="https://www.nashtechglobal.com/wp-content/uploads/2020/04/logo.png" alt="" />
+        </div>
+        <div class="sidebar">
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <div class="navbar navbar-item">
+                            <h3>Home</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar navbar-item">
+                            <h3>Manage User</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar navbar-item">
+                            <h3>Manage Asset</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar navbar-item">
+                            <h3>Manage Assignment</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar-item">
+                            <h3>Request for Returning</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar-item">
+                            <h3>Report</h3>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="user-list-section">
+        <div class="title">
+            <h2>User List</h2>
+        </div>
+        <div class="user-list-toolbar">
+            <div class="filter_component filter-section">
+                <div id="role-filter-section">
+                    <div class="dropdown-toggle">
+                        <div class="dropdown-header">
+                            <div class="dropdown-title">Type</div>
+                            <div class="dropdown-icon">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><input type="checkbox" name="role" id="role"><span>ALL</span></li>
+                                <li><input type="checkbox" name="role" id="role"><span>ADMIN</span></li>
+                                <li><input type="checkbox" name="role" id="role"><span>STAFF</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar_create-btn_component search_bar-create_btn-wrapper">
+                <div id="search-section">
+                    <input name="keyword" id="search-query" placeholder="Search">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                <div id="create-btn-section">
+                    <button>Create new User</button>
+                </div>
+            </div>
+        </div>
+        <!-- filter bar + button -->
+        <div class="results-section">
+            <div class="user_table">
+                <table>
+                    <thead>
+                        <th class="col">
+                            <p class="col staff_code_col">Staff Code <i class="fas fa-sort-down"></i></p>
+                        </th>
+                        <th class="col">
+                            <p class=" col full_name_col">Full Name <i class="fas fa-sort-down"></i></p>
+                        </th>
+                        <th class="col">
+                            <p class="col username_col">Username</p>
+                        </th>
+                        <th class="col">
+                            <p class="col joined_day_col">Joined Date <i class="fas fa-sort-down"></i></p>
+                        </th>
+                        <th class="col">
+                            <p class="col type_col">Type <i class="fas fa-sort-down"></i></p>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col staff_code_col">
+                                <p class="col staff_code_col">SD0001</p>
+                            </td>
+                            <td class="col full_name_col">
+                                <p class="col full_name_col">Hoang Thanh Phong</p>
+                            </td>
+                            <td class="col username_col">
+                                <p class="col username_col">phonght</p>
+                            </td>
+                            <td class="col joined_day_col">
+                                <p class="col joined_day_col">20/12/2021</p>
+                            </td>
+                            <td class="col type_col">
+                                <p class="col type_col">Admin</p>
+                            </td>
+                            <td class="btn_col">
+                                <i class="fas fa-pencil-alt"></i>
+                            </td>
+                            <td class="btn_col">
+                                <i class="fas fa-times-circle" style="color: red !important"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="pagination-wrapper">
+                <button class="btn btn_previous">Previous</button>
+                <ol class="pagination-list">
+                    <li>
+                        <span>
+                            <div class="page_number active" id="span-1">
+                                <p>1</p>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <div class="page_number" id="span-2">
+                                <p>2</p>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <div class="page_number" id="span-3">
+                                <p>3</p>
+                            </div>
+                        </span>
+                    </li>
+                </ol>
+                <button class="btn btn_next">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

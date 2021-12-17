@@ -1,0 +1,10 @@
+.login-layout-modal {
+  background: rgba($color: #707070, $alpha: 0.2);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

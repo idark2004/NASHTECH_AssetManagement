@@ -1,0 +1,52 @@
+.assignment-modal-wrapper {
+  background: white;
+  width: 30vw;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid black;
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  &-header {
+    background: rgba($color: #dfd8ca, $alpha: 0.5);
+    width: 100%;
+    display: flex;
+    border-radius: 1rem 1rem 0 0;
+    color: red;
+    border-bottom: 1px solid black;
+    padding: 1rem 2rem;
+  }
+  &-message {
+    width: 100%;
+    display: flex;
+    color: black;
+    padding: 1rem 2rem;
+  }
+  &-submit {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+  &-submit > input {
+    padding: 0.5em 1em;
+    margin-right: 5%;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    &:hover {
+      background: rgba($color: #ff0000, $alpha: 0.9);
+    }
+  }
+}
+
+.required-icon {
+  color: red;
+}
+
+.invalid-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -1em;
+}

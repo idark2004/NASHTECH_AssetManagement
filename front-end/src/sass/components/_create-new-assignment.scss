@@ -1,0 +1,107 @@
+.create-new-assignment {
+    @include flex(flex-start, flex-start);
+
+    &__content {
+        padding: 3rem 0 0 5rem;
+        margin-left: 5rem;
+
+        &__header {
+            margin-bottom: 2rem;
+        }
+
+        &__form {
+            .holdpopup {
+                position: relative;
+            }
+
+            &__row {
+                @include flex(center, space-between);
+                margin-bottom: 1rem;
+
+                &__label {
+                    margin-right: 0.5rem;
+                }
+
+                &__input {
+                    height: 2.3rem;
+                    border: 1px solid black;
+                    border-radius: 0.4rem;
+                    width: 18.4rem;
+                    padding: 0.2rem;
+
+                    .react-datepicker-wrapper {
+                        height: 100%;
+                        width: 90%;
+
+                        .react-datepicker__input-container {
+                            height: 100%;
+                        }
+                    }
+
+                    .react-datepicker__tab-loop {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .input {
+                        height: 100%;
+                        width: 90%;
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+                
+                &__text {
+                    height: 4.6rem;
+                    border: 1px solid black;
+                    border-radius: 0.4rem;
+                    width: 18.4rem;
+                    padding: 0.2rem;
+
+                    #text {
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        background-color: transparent;
+                        resize: none;
+                        outline: none;
+                    }
+                }
+            }
+
+            &__button {
+                @include flex(flex-start, flex-end);
+                margin-top: 2rem;
+
+                #save {
+                    padding: 0.6rem 1rem;
+                    margin-right: 2rem;
+                    background-color: #e9424d;
+                    border: 1px solid #e9424d;
+                    border-radius: 0.4rem;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                #save_disable {
+                    padding: 0.6rem 1rem;
+                    margin-right: 2rem;
+                    background-color: #d1c0c1;
+                    border: 1px solid #d1c0c1;
+                    border-radius: 0.4rem;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                #cancel {
+                    padding: 0.6rem 1rem;
+                    background-color: #fff;
+                    border-radius: 0.4rem;
+                    border: 1px solid black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

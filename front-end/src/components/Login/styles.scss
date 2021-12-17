@@ -1,0 +1,78 @@
+.modal-wrapper {
+  background: white;
+  width: 30vw;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid black;
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  &-header {
+    background: rgba($color: #dfd8ca, $alpha: 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    color: red;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+  }
+  &-message {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+  }
+}
+
+.modal-wrapper-form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  &-group {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    &-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-submit {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &-group > input {
+    padding: 0.5rem;
+    border-radius: 0.3em;
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 13.5vw;
+    margin: 0 5%;
+  }
+  &-submit > input {
+    padding: 0.6em 1em;
+    margin-right: 5%;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    &:hover {
+      background: rgba($color: #ff0000, $alpha: 0.9);
+    }
+  }
+}
+
+.required-icon {
+  color: red;
+}
+
+.invalid-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -1em;
+}

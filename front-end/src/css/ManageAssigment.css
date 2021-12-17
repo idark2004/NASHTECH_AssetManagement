@@ -1,0 +1,252 @@
+/*genneral */
+
+.Assignment_Page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 3rem;
+  padding-right: 5rem;
+  padding-left: 4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .Assignment_Page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 32px;
+    padding-right: 40px;
+    padding-left: 20px;
+  }
+  .Assignment_List_Section {
+    width: 90%;
+    padding-left: 80px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  div.assign_table_wrapper {
+    overflow-x: scroll;
+  }
+}
+
+.Assignment_List_Section {
+  width: 100%;
+  padding-left: 5rem;
+}
+
+.Assignment_Header {
+  margin-bottom: 2rem;
+}
+
+p {
+  margin: 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Asset View Page*/
+
+/*Toolbar Container*/
+
+/*assign date input*/
+
+/* .react-datepicker__input-container input {
+
+} */
+
+/*search_box_container*/
+/*Assignment Table*/
+div.assign_table_section {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0px;
+}
+
+div.assign_table_wrapper {
+  width: 90%;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+th p,
+td p {
+  margin: 0 0.25rem;
+  border-bottom: 1px solid black;
+}
+
+td.col {
+  width: 160px;
+}
+
+.col_no {
+  width: 48px;
+}
+
+.col_asset_code,
+.col_assign_by,
+.col_assign_date,
+.col_assign_to,
+.col_assign_by {
+  width: 112px !important;
+}
+
+p.col_assign_by,
+p.col_assign_to {
+  text-transform: lowercase;
+}
+
+p.col_asset_name,
+p.col_assign_state {
+  width: 200px !important;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+p.col_assign_state {
+  text-transform: capitalize;
+}
+
+.col_asset_name,
+.col_assign_state {
+  width: 200px !important;
+}
+
+/*paging*/
+div.paging-section {
+  margin-top: 32px;
+  width: 880px;
+  display: flex;
+  padding-left: 80px;
+  justify-content: space-around;
+}
+
+div.paging-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 32px;
+}
+
+ul#asset_paging_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 0;
+  padding: 0 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+ul#asset_paging_page li {
+  width: 32px;
+  height: 32px;
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+ul#asset_paging_page li.active {
+  background-color: red;
+  color: white;
+}
+
+.btn-paging {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 100%;
+  background-color: #ffffff;
+  color: red;
+}
+
+.btn-paging.disable {
+  color: black;
+}
+
+#assign_btn_previous {
+  border-left: 1px solid black;
+  border-right: none;
+}
+
+#assign_btn_next {
+  border-right: 1px solid black;
+}
+
+.btn.disable {
+  opacity: 0.2;
+}
+
+#edit_btn {
+  color: black;
+  border: none;
+}
+
+#remove_btn {
+  color: red;
+  border: none;
+}
+
+#recycle_btn {
+  color: #687ae6;
+  border: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  display: none !important;
+}
+
+/*Date popup*/
+.popupdate {
+  width: 10rem;
+  position: relative;
+}
+
+.popupdate_content {
+  position: relative;
+  visibility: hidden;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f5f5f5;
+}
+
+.popupdate:hover .popupdate_content {
+  top: 0 0;
+  position: absolute;
+  visibility: visible;
+  width: fit-content;
+  height: fit-content;
+}
+
+p.col_header {
+  text-transform: capitalize;
+}
+
+.date-button {
+  width: 120px;
+  height: inherit;
+  background-color: white;
+  color: black;
+  height: 35px;
+  border: 1px solid black;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+/*Assignment create page*/
+.form-line {
+  width: 17rem;
+  height: 2rem;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="icon" href="%PUBLIC_URL%/logo_nashtech.jpg" />
+  <title>Online Assets Management</title>
+  <style>
+    ::-ms-reveal {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="text/javascript">
+    window.addEventListener('beforeunload', function (e) {
+      if (document.cookie.indexOf('id=') < 0) {
+        localStorage.clear()
+      }
+    }); 
+    if(window.location.pathname != '/login') 
+    window.addEventListener('load', function (e) {
+      if (document.cookie.indexOf('id=') < 0) {
+        window.location='/login'
+      }
+    });   
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>
+</body>
+
+</html>

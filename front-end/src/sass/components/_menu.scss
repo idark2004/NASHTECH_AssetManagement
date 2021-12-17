@@ -1,0 +1,39 @@
+.menu {
+  width: 20%;
+
+  &__logo {
+    margin-bottom: 1rem;
+
+    img {
+      margin-bottom: 0.25rem;
+    }
+
+    h3 {
+      color: #e30613;
+    }
+  }
+
+  &__widget {
+    background-color: $second-bg;
+    padding: 0;
+    width: 16rem;
+    flex-direction: column;
+
+    &__content {
+      width: auto;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ffffff;
+      padding: 0 1em;
+
+      a {
+        font-weight: 500;
+      }
+
+      &.active {
+        background-color: $main-bg;
+        color: $txt-white;
+      }
+    }
+  }
+}

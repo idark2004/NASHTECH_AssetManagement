@@ -1,0 +1,281 @@
+/*genneral */
+p {
+  margin: 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Asset View Page*/
+.assignment_page {
+  width: 60rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Toolbar Container*/
+div.assignment_toolbar_container {
+  display: flex;
+  width: 55rem;
+  padding-left: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.assign_filter_section {
+  width: 18rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.assignment-search-create-section {
+  width: 29rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Toolbar section*/
+#state_dropdown {
+  width: 12rem;
+  height: 1.6rem;
+  border: 1px solid black;
+  margin-right: 4rem;
+}
+
+.state_dropdown_content {
+  width: inherit;
+  height: 4rem;
+}
+
+.dropdown_header {
+  width: inherit;
+  height: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
+
+.dropdown_header_wrapper {
+  padding-top: 0;
+  display: flex;
+  width: 100%;
+}
+
+.dropdown_header_title {
+  width: 80%;
+  padding-top: 0.4rem;
+  padding-left: 1rem;
+}
+
+.dropdown_header_icon {
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20%;
+  padding-top: 0.4rem;
+}
+
+#state_dropdown:hover .state_dropdown_content {
+  visibility: visible;
+}
+
+.state_dropdown_content {
+  display: flex;
+  justify-content: space-around;
+  width: inherit;
+  height: fit-content;
+  visibility: hidden;
+  border: top none;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.state_dropdown_content_wrapper {
+  width: 90%;
+}
+
+.state_dropdown_content_wrapper_item {
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.2rem;
+}
+
+/*assign date input*/
+#assignment-date-section {
+  border: 1px solid black;
+  width: 9rem;
+}
+
+.input_assignment_date {
+  height: 1.6rem;
+  border: none;
+}
+
+/*search_box_container*/
+.search_box_container {
+  width: 20rem;
+  border: 1px solid black;
+  height: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 0.2rem;
+}
+
+.search_box_container div#search-box-section {
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+div#search-box-section form {
+  height: inherit;
+  width: 18rem;
+  margin: 0 0;
+}
+
+div#search-box-section input#search-input {
+  width: 100%;
+  height: inherit;
+  border: none;
+  padding: 0 0.2rem;
+}
+
+div#search-box-section button {
+  width: 2rem;
+  border: none;
+  border-left: 1px solid black;
+}
+
+div.wrapper_btn_create {
+  height: 1.6rem;
+}
+
+div.wrapper_btn_create button {
+  height: 1.625rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: red;
+  color: white;
+}
+
+div.wrapper_btn_create button p {
+  margin: 0 0;
+  font-style: bold;
+  font-weight: 200;
+}
+
+/*Assignment Table*/
+div.assign_table_section {
+  margin-top: 2rem;
+  width: 55rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5rem;
+}
+
+div.assign_table_wrapper {
+  width: 55rem;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding-left: 0.2rem;
+}
+
+p.col {
+  margin: 0 0;
+  border-bottom: 1px solid black;
+}
+
+td.col {
+  width: 10rem;
+}
+
+td.col_no {
+  width: 3rem;
+}
+
+td.col_asset_code,
+td.col_assign_by,
+td.col_assign_date,
+td.col_assign_to,
+td.col_assign_by {
+  width: 7rem;
+}
+
+td.col_asset_name,
+td.col_assign_state {
+  width: 15rem;
+}
+
+/*paging*/
+div.paging-section {
+  margin-top: 2rem;
+  width: 55rem;
+  display: flex;
+  padding-left: 5rem;
+  justify-content: space-around;
+}
+
+div.paging-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 2rem;
+}
+
+ul#asset_paging_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 0;
+  padding: 0 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+ul#asset_paging_page li {
+  width: 2rem;
+  height: 2rem;
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+ul#asset_paging_page li.active {
+  background-color: red;
+  color: white;
+}
+
+.btn-paging {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 100%;
+  background-color: #ffffff;
+  color: red;
+}
+
+.btn-paging.disable {
+  color: black;
+}
+
+#assign_btn_previous {
+  border-left: 1px solid black;
+  border-right: none;
+}
+
+#assign_btn_next {
+  border-right: 1px solid black;
+}

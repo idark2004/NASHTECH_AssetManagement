@@ -1,0 +1,88 @@
+.header {
+  background-color: $main-bg;
+  top: 0;
+  left: 0;
+  width: auto;
+  z-index: 99;
+  height: $header-height;
+  transition: height 0.3s ease;
+  color: $txt-white;
+
+  @include tablet {
+    height: $header-tablet-height;
+    width: 100vw;
+  }
+
+  @include mobile {
+    height: $header-mobile-height;
+  }
+
+  .container {
+    @include flex(center, space-between);
+    height: 100%;
+  }
+
+  &__logo {
+    @include flex(center, space-between);
+    inset: 0;
+
+    h2 {
+      padding-left: 1rem;
+    }
+
+    img {
+      max-width: 40%;
+      height: auto;
+    }
+
+    @include tablet {
+      img {
+        max-width: 35%;
+        height: auto;
+      }
+    }
+
+    @include mobile {
+      img {
+        max-width: 25%;
+        height: auto;
+      }
+    }
+  }
+
+  &__menu {
+    &__change__password:hover {
+      color: $txt-second-color;
+    }
+    &__item:hover {
+      color: $txt-second-color;
+    }
+
+    &__right {
+      font-size: 1rem;
+
+      &__item {
+        @include flex(center, center);
+
+        @include tablet {
+          margin-left: 10px;
+        }
+      }
+
+      @include mobile {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.home:hover {
+  color: #fff;
+}
